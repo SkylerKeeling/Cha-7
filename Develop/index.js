@@ -38,12 +38,14 @@ const questions = () => {
     {
       type: "input",
       name: "License",
-      message: "Which license would you like for your project?",
+      message: "Would you like an MIT license or no license?",
+      choices: ["MIT License", "no license"],
     },
     {
       type: "input",
       name: "Badges",
       message: "Which Badge would you like for your project?",
+      choices: ["yes", "no"],
     },
     {
       type: "input",
