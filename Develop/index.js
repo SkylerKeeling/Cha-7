@@ -37,15 +37,9 @@ const questions = () => {
     },
     {
       type: "input",
-      name: "License",
-      message: "Would you like an MIT license or no license?",
-      choices: ["MIT License", "no license"],
-    },
-    {
-      type: "input",
-      name: "Badges",
-      message: "Which Badge would you like for your project?",
-      choices: ["yes", "no"],
+      name: "license",
+      message: "Which license would you like?",
+      choices: ["MIT License", "Apache 2.0", "no license"],
     },
     {
       type: "input",
@@ -142,3 +136,5 @@ function init() {
 
 // Function call to initialize app
 init()
+
+module.exports = questions
