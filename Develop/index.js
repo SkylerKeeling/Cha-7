@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer")
 const {writeFile} = require("fs").promises
+const generateREADME = require("./utils/generateMarkdown")
 
 // TODO: Create an array of questions for user input
 const questions = () => {
@@ -36,10 +37,10 @@ const questions = () => {
       message: "Provide the credits of your project:",
     },
     {
-      type: "input",
+      type: "list",
       name: "license",
       message: "Which license would you like?",
-      choices: ["MIT License", "Apache 2.0", "no license"],
+      choices: ["MIT", "Apache 2.0", "no license"],
     },
     {
       type: "input",
@@ -64,72 +65,72 @@ const questions = () => {
   ])
 }
 
-// TODO: Create a function to write README file
-const generateREADME = ({
-  title,
-  description,
-  installation,
-  usage,
-  screenshot,
-  credits,
-  License,
-  Badges,
-  features,
-  contribute,
-  tests,
-  personal,
-}) =>
-  `#${title}
+// // TODO: Create a function to write README file
+// const generateREADME = ({
+//   title,
+//   description,
+//   installation,
+//   usage,
+//   screenshot,
+//   credits,
+//   License,
+//   Badges,
+//   features,
+//   contribute,
+//   tests,
+//   personal,
+// }) =>
+//   `#${title}
 
-##Description 
+// ##Description
 
-${description}
+// ${description}
 
-##Installation 
+// ##Installation
 
-${installation}
+// ${installation}
 
-##Usage
+// ##Usage
 
-${usage}
+// ${usage}
 
-##Screenshot
+// ##Screenshot
 
-![alt text](${screenshot})
+// ![alt text](${screenshot})
 
-##Credits
+// ##Credits
 
-${credits}
+// ${credits}
 
-##License
+// ##License
 
-${License}
+// ${License}
 
-##Badges
+// ##Badges
 
-${Badges}
+// ${Badges}
 
-##Features
+// ##Features
 
-${features}
+// ${features}
 
-##How to contribute 
+// ##How to contribute
 
-${contribute}
+// ${contribute}
 
-##Tests 
+// ##Tests
 
-${contribute}
+// ${tests}
 
-##Personal
+// ##Personal
 
-${personal}
-`
+// ${personal}
+// `
 
 // TODO: Create a function to initialize app
 function init() {
   questions()
-    .then(answers => writeFile("README.md", generateREADME(answers)))
+    .then(answers => writeFile("README2.md", generateREADME(answers)))
     .then(() => console.log("Successfully completed README file"))
     .catch(err => console.error(err))
 }

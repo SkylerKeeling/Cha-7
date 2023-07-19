@@ -33,18 +33,69 @@ function renderLicenseLink(license) {
   return licenseLink
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-  if (license == "MIT" || "Apache 2.0") {
-  }
-}
+// TODO: Create a function to write README file
+const generateREADME = ({
+  title,
+  description,
+  installation,
+  usage,
+  screenshot,
+  credits,
+  license,
+  Badges,
+  features,
+  contribute,
+  tests,
+  personal,
+}) =>
+  `# ${title}
 
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+## Description 
 
+${description}
+
+## Installation 
+
+${installation}
+
+## Usage
+
+${usage}
+
+## Screenshot
+
+![alt text](${screenshot})
+
+## Credits
+
+${credits}
+
+## License
+
+${license}
+${renderLicenseBadge(license)}
+<br>
+${renderLicenseLink(license)}
+
+## Badges
+
+${Badges}
+
+## Features
+
+${features}
+
+## How to contribute 
+
+${contribute}
+
+## Tests 
+
+${tests}
+
+## Personal
+
+${personal}
 `
-}
 
-module.exports = generateMarkdown
+module.exports = generateREADME
