@@ -1,24 +1,24 @@
-# ssdfsd
+# README File Generator
 
 ## Description 
 
-sdf
+This README Generator asks users multiple questions concerning their project. Based on the answers the application generates a README   file 
 
 ## Installation 
 
-sdf
+Visit the Github repository attached to this file and git clone the repository to any project.
 
 ## Usage
 
-sdf
+The project is used with node.js to run the application without a browser
 
 ## Screenshot
 
-![alt text](sdf)
+![alt text]()
 
 ## Credits
 
-sdf
+Skyler Keeling
 
 ## License
 
@@ -33,16 +33,16 @@ undefined
 
 ## Features
 
-sdf
+Professional personalized README files
 
 ## How to contribute 
 
-sdf
+
 
 ## Tests 
 
-sdf
+
 
 ## Personal
 
-sf
+

@@ -65,68 +65,6 @@ const questions = () => {
   ])
 }
 
-// // TODO: Create a function to write README file
-// const generateREADME = ({
-//   title,
-//   description,
-//   installation,
-//   usage,
-//   screenshot,
-//   credits,
-//   License,
-//   Badges,
-//   features,
-//   contribute,
-//   tests,
-//   personal,
-// }) =>
-//   `#${title}
-
-// ##Description
-
-// ${description}
-
-// ##Installation
-
-// ${installation}
-
-// ##Usage
-
-// ${usage}
-
-// ##Screenshot
-
-// ![alt text](${screenshot})
-
-// ##Credits
-
-// ${credits}
-
-// ##License
-
-// ${License}
-
-// ##Badges
-
-// ${Badges}
-
-// ##Features
-
-// ${features}
-
-// ##How to contribute
-
-// ${contribute}
-
-// ##Tests
-
-// ${tests}
-
-// ##Personal
-
-// ${personal}
-// `
-
 // TODO: Create a function to initialize app
 function init() {
   questions()
