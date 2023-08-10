@@ -1,16 +1,16 @@
-# README File Generator
+# README generator application
 
 ## Description 
 
-This README Generator asks users multiple questions concerning their project. Based on the answers the application generates a README   file 
+This application prompts the user for input which creates a README file
 
 ## Installation 
 
-Visit the Github repository attached to this file and git clone the repository to any project.
+Visit the github associated to access the code.
 
 ## Usage
 
-The project is used with node.js to run the application without a browser
+Project is used to make development more efficient.
 
 ## Screenshot
 
@@ -27,13 +27,9 @@ MIT
 <br>
 https://www.mit.edu/~amini/LICENSE.md
 
-## Badges
-
-undefined
-
 ## Features
 
-Professional personalized README files
+README generator
 
 ## How to contribute 
 
@@ -45,4 +41,4 @@ Professional personalized README files
 
 ## Personal
 
-
+skylerkeeling

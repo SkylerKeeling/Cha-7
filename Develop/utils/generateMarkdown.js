@@ -42,7 +42,6 @@ const generateREADME = ({
   screenshot,
   credits,
   license,
-  Badges,
   features,
   contribute,
   tests,
@@ -76,10 +75,6 @@ ${license}
 ${renderLicenseBadge(license)}
 <br>
 ${renderLicenseLink(license)}
-
-## Badges
-
-${Badges}
 
 ## Features
 
