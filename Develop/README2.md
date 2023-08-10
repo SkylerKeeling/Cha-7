@@ -14,7 +14,7 @@ Project is used to make development more efficient.
 
 ## Screenshot
 
-![alt text]()
+![alt text](https://github.com/SkylerKeeling/Cha-7/blob/main/Develop/Screen%20Shot%202023-08-10%20at%209.34.10%20AM.png)
 
 ## Credits
 
